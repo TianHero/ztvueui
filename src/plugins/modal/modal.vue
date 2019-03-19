@@ -2,6 +2,7 @@
   <transition name="fade">
     <div v-show="isVisible">
       <div class="modal">
+        <div v-show="closeShow" class="closeIcon" @click="handleCloseClick">X</div>
         <div class="title" v-if="title">
           {{title}}
         </div>
@@ -34,6 +35,10 @@ export default {
     btnTxt: String, // 按钮文字
     leftBtnTxt: String,
     rightBtnTxt: String,
+    closeShow: {
+      type: Boolean,
+      default: false
+    },
     callback: {
       type: Function,
       default() {}
@@ -66,6 +71,9 @@ export default {
     };
   },
   methods: {
+    handleCloseClick() {
+      this.isVisible = false;
+    },
     handleClick() {
       this.isVisible = false;
       this.callback();
@@ -105,8 +113,18 @@ export default {
   text-align: center;
   border-radius: 6/3.75vw;
   border: 1px solid #ccc;
+  .closeIcon {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+  }
   .title {
     text-align: center;
+    font-weight: bold;
   }
   .main {
     margin: 20/3.75vw 15/3.75vw;

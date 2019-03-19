@@ -28,7 +28,13 @@ export default {
 
   alert(opts) {
     const defaultOpts = {
-      title: '', content: '', type: 'alert', color: '', callback() { }, closeShow: false, btnTxt: '我知道了'
+      title: '',
+      content: '',
+      type: 'alert',
+      color: '',
+      callback() { },
+      closeShow: false,
+      btnTxt: '我知道了'
     };
     const propsOpts = Object.assign(defaultOpts, opts);
     return open(propsOpts);
