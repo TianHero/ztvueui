@@ -1,10 +1,12 @@
 {
   "name": "ztvueui",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "private": false,
+  "author": "zt",
+  "main": "dist/ztvueui.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name ztvueui src/plugins/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -17,6 +19,7 @@
     "@vue/cli-service": "^3.0.5",
     "@vue/eslint-config-airbnb": "^4.0.0",
     "babel-eslint": "^10.0.1",
+    "babel-polyfill": "^6.26.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "less": "^3.0.4",
