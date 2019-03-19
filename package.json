@@ -1,6 +1,6 @@
 {
   "name": "ztvueui",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "author": "zt",
   "main": "dist/ztvueui.common.js",
