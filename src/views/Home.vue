@@ -18,18 +18,18 @@ export default {
     //   duration: 3000,
     // });
 
-    // this.$toast.txt({
-    //   content: '复制成功'
-    // });
-    this.$modal.confirm({
-      content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
-      leftCallback() {
-        console.log('left');
-      },
-      rightCallback() {
-        console.log('right');
-      }
+    this.$toast.txt({
+      content: '复制成功'
     });
+    // this.$modal.confirm({
+    //   content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+    //   leftCallback() {
+    //     console.log('left');
+    //   },
+    //   rightCallback() {
+    //     console.log('right');
+    //   }
+    // });
     // this.$modal.alert({
     //   title: '标题',
     //   content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',

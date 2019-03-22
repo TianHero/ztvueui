@@ -13,8 +13,8 @@ const install = function (Vue) {
   Object.keys(components).forEach(key => {
     Vue.component(components[key].name, components[key]);
   });
-  Vue.prototype.$toast = Toast;
-  Vue.prototype.$modal = Modal;
+  Vue.prototype.$ht_toast = Toast;
+  Vue.prototype.$ht_modal = Modal;
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
@@ -24,6 +24,12 @@ if (typeof window !== 'undefined' && window.Vue) {
 const API = {
   install,
   ...components
+};
+
+export {
+  install,
+  Toast,
+  Modal,
 };
 
 export default API;

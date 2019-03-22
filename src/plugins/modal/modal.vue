@@ -27,7 +27,7 @@
 <script>
 
 export default {
-  name: 'zt-modal',
+  name: 'ht-modal',
   props: {
     type: String,
     title: String, // 标题
@@ -125,6 +125,7 @@ export default {
   .title {
     text-align: center;
     font-weight: bold;
+    padding: 15/3.75vw 15/3.75vw 0 15/3.75vw;
   }
   .main {
     margin: 20/3.75vw 15/3.75vw;
@@ -135,6 +136,8 @@ export default {
   .buttons{
     border-top: 1/3.75vw solid #ccc;
     overflow: hidden;
+    border-bottom-right-radius: 6/3.75vw;
+    border-bottom-left-radius: 6/3.75vw;
     .btn {
       border: none;
       width: 100%;
@@ -145,6 +148,8 @@ export default {
       height: 50/3.75vw;
       padding: 0;
       background-color: #fff;
+      border-bottom-right-radius: 6/3.75vw;
+      border-bottom-left-radius: 6/3.75vw;
     }
     .left {
       float: left;
@@ -154,6 +159,7 @@ export default {
       font-size: 17/3.75vw;
       line-height: 50/3.75vw;
       color: #000;
+      border-bottom-left-radius: 6/3.75vw;
     }
     .right {
       float: left;
@@ -162,6 +168,7 @@ export default {
       font-size: 17/3.75vw;
       line-height: 50/3.75vw;
       color: #EE6D0F;
+      border-bottom-right-radius: 6/3.75vw;
     }
   }
 }

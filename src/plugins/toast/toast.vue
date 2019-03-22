@@ -13,7 +13,7 @@
 <script>
 
 export default {
-  name: 'zt-toast',
+  name: 'ht-toast',
   props: {
     content: String,
     autoClose: {

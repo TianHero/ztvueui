@@ -1,0 +1,55 @@
+.xm__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.xm__toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  color: #fff;
+  z-index: 3001;
+  font-size: 60px;
+  line-height: 1.2;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: rgba(39, 39, 39, .7);
+
+  &.xm__toast--text {
+    color: #FFFFFF;
+    padding: 30px;
+    font-size: 30px !important;
+    line-height: 44px;
+    width: 480px;
+    height: 104px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  &.xm__toast--loading {
+    width: 120px;
+    min-height: 120px;
+    padding: 15px;
+  }
+
+  & .xm__loading {
+    font-size: 0;
+    line-height: 0;
+    z-index: 0;
+    position: relative;
+  }
+
+  & .xm__toast--loading .xm__loading {
+    margin: 10px 0 5px;
+  }
+}
